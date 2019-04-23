@@ -3,4 +3,5 @@
 h1 {
   font-weight: 100;
   font-size: map-get($units, 4);
+  margin-bottom: map-get($units, 2);
 }
