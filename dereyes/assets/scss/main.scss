@@ -1,0 +1,21 @@
+@import 'partials/display';
+@import 'partials/flex';
+@import 'partials/overflow';
+@import 'partials/sizing';
+@import 'partials/typography';
+@import 'partials/units';
+
+@import url('https://use.typekit.net/ftq0ggh.css');
+
+#__nuxt, #__layout {
+  display: contents;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  font-family: nimbus-sans, sans-serif;
+}

@@ -1,0 +1,22 @@
+@mixin classesFromMap($map) {
+  $properties: map-get($map, properties);
+  $values: map-get($map, values);
+
+  @each $p in $properties {
+    $propertyAlias: map-get($p, propertyAlias);
+    $property: map-get($p, property);
+    $prefixes: map-get($p, prefixes);
+
+    @each $v in $values {
+      $valueAlias: map-get($v, valueAlias);
+      $value: map-get($v, value);
+
+      .#{$propertyAlias}-#{$valueAlias} {
+        #{$property}: #{$value};
+        @each $prefix in $prefixes {
+          #{$prefix}#{$property}: #{$value};
+        }
+      }
+    }
+  }
+}

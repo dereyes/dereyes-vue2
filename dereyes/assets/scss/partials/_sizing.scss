@@ -1,0 +1,24 @@
+@import '../modules/all';
+
+$height: (
+  properties: (
+    (
+      propertyAlias: height,
+      property: height,
+      prefixes: ()
+    ),
+    (
+      propertyAlias: width,
+      property: width,
+      prefixes: ()
+    ),
+  ),
+  values: (
+    (
+      valueAlias: 100,
+      value: 100%
+    ),
+  ),
+);
+
+@include classesFromMap($height);

@@ -1,0 +1,56 @@
+@import '../modules/all';
+
+$flex: (
+  properties: (
+    (
+      propertyAlias: flex,
+      property: flex,
+      prefixes: (
+        '-webkit-',
+        '-ms-',
+        '-moz-',
+      )
+    ),
+  ),
+  values: (
+    (
+      valueAlias: fill,
+      value: 1 1 0
+    ),
+    (
+      valueAlias: sm,
+      value: 0 0 map-get($sizing, sm)
+    ),
+    (
+      valueAlias: md,
+      value: 0 0 map-get($sizing, md)
+    ),
+  ),
+);
+
+@include classesFromMap($flex);
+
+$direction: (
+  properties: (
+    (
+      propertyAlias: flexDirection,
+      property: flex-direction,
+      prefixes: (
+        '-webkit-',
+        '-moz-',
+      )
+    ),
+  ),
+  values: (
+    (
+      valueAlias: row,
+      value: row
+    ),
+    (
+      valueAlias: col,
+      value: column
+    ),
+  ),
+);
+
+@include classesFromMap($direction);

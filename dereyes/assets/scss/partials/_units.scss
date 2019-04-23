@@ -1,0 +1,16 @@
+@import '../modules/all';
+
+$padding: (
+  properties: (
+    (
+      propertyAlias: padding,
+      property: padding,
+      prefixes: (),
+    ),
+  ),
+  maps: (
+    $units,
+  ),
+);
+
+@include classesFromMaps($padding);

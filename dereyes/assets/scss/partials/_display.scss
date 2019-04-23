@@ -1,0 +1,23 @@
+@import '../modules/all';
+
+$display: (
+  properties: (
+    (
+      propertyAlias: display,
+      property: display,
+      prefixes: ()
+    ),
+  ),
+  values: (
+    (
+      valueAlias: contents,
+      value: contents
+    ),
+    (
+      valueAlias: flex,
+      value: flex
+    ),
+  ),
+);
+
+@include classesFromMap($display);

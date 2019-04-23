@@ -1,0 +1,32 @@
+@import '../modules/all';
+
+$overflow: (
+  properties: (
+    (
+      propertyAlias: overflowX,
+      property: overflow-x,
+      prefixes: (
+        '-ms-',
+      )
+    ),
+    (
+      propertyAlias: overflowY,
+      property: overflow-y,
+      prefixes: (
+        '-ms-',
+      )
+    ),
+  ),
+  values: (
+    (
+      valueAlias: scroll,
+      value: scroll
+    ),
+    (
+      valueAlias: hidden,
+      value: hidden
+    ),
+  ),
+);
+
+@include classesFromMap($overflow);
