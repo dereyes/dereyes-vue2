@@ -8,9 +8,7 @@
         ↓
       </h1>
     </div>
-    <div id="projects" class="scrollSnap">
-      <NavProjects />
-    </div>
+    <NavProjects />
     <div
       id="footer"
       class="minHeight-50 display-flex flexDirection-col justifyContent-flexEnd scrollSnap"
@@ -50,21 +48,8 @@ export default {
   scroll-snap-align: start;
 }
 
-#projects {
-  min-height: 100%;
-  scroll-snap-align: start;
-}
-
 #footer {
   min-height: 33%;
   scroll-snap-align: start;
-}
-
-.scrollSnap {
-  // scroll-snap-type: mandatory;
-  // scroll-snap-points-y: repeat(1rem);
-  // scroll-snap-type: y mandatory;
-  // min-height: 200%;
-  //scroll-snap-align: start;
 }
 </style>
