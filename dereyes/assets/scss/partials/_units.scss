@@ -14,3 +14,25 @@ $padding: (
 );
 
 @include classesFromMaps($padding);
+
+@import '../modules/all';
+
+$margin: (
+  properties: (
+    (
+      propertyAlias: padding,
+      property: padding,
+      prefixes: (),
+    ),
+    (
+      propertyAlias: marginBottom,
+      property: margin-bottom,
+      prefixes: (),
+    ),
+  ),
+  maps: (
+    $units,
+  ),
+);
+
+@include classesFromMaps($margin);

@@ -54,3 +54,24 @@ $direction: (
 );
 
 @include classesFromMap($direction);
+
+$justifyAlign: (
+  properties: (
+    (
+      propertyAlias: justifyContent,
+      property: justify-content,
+      prefixes: (
+        '-webkit-',
+        '-moz-',
+      )
+    ),
+  ),
+  values: (
+    (
+      valueAlias: flexEnd,
+      value: flex-end
+    ),
+  ),
+);
+
+@include classesFromMap($justifyAlign);

@@ -22,3 +22,26 @@ $height: (
 );
 
 @include classesFromMap($height);
+
+$minHeight: (
+  properties: (
+    (
+      propertyAlias: minHeight,
+      property: min-height,
+      prefixes: ()
+    ),
+    (
+      propertyAlias: minWidth,
+      property: min-width,
+      prefixes: ()
+    ),
+  ),
+  values: (
+    (
+      valueAlias: 100,
+      value: 100%
+    ),
+  ),
+);
+
+@include classesFromMap($minHeight);
