@@ -1,20 +1,19 @@
 <template>
   <div class="display-flex flex-fill flexDirection-col">
-    <main class="display-flex flex-column flex-fill overflowY-scroll">
+    <main class="display-flex flexDirection-col flex-fill">
       <nuxt />
     </main>
-    <Header />
   </div>
 </template>
 
 <script>
-import Header from '~/components/layout/header.vue'
+// import Header from '~/components/layout/header.vue'
 
-export default {
-  components: {
-    Header
-  }
-}
+// export default {
+//   components: {
+//     Header
+//   }
+// }
 </script>
 
 <style>

@@ -1,24 +1,21 @@
 <template>
-  <div>
-    <div class="minHeight-100">
-      <h1 class="marginBottom-0">
-        Darin E. Reyes designs delightful experiences.
+  <div id="scrollContainer" class="overflowY-scroll flex-fill">
+    <div id="intro" class="scrollSnap">
+      <h1 class="marginBottom-0 scaled">
+        Darin E. Reyes designs delightful digital experiences.
       </h1>
-      <h1 class="position-sticky marginBottom-0">
+      <h1 class="position-sticky marginBottom-0 scaled">
         ↓
       </h1>
     </div>
-    <div class="minHeight-150">
-      <h1 class="position-sticky">
-        <span v-for="project in projects" :key="project.id">
-          {{ project.name }}
-        </span>
-      </h1>
+    <div id="projects" class="scrollSnap">
+      <NavProjects />
     </div>
     <div
-      class="minHeight-50 display-flex flexDirection-col justifyContent-flexEnd"
+      id="footer"
+      class="minHeight-50 display-flex flexDirection-col justifyContent-flexEnd scrollSnap"
     >
-      <h1 class="marginBottom-0">
+      <h1 class="marginBottom-0 scaled">
         <span>
           About
         </span>
@@ -34,25 +31,40 @@
 </template>
 
 <script>
+import NavProjects from '~/components/nav/projects.vue'
+
 export default {
-  computed: {
-    projects() {
-      return this.$store.state.projects.projects
-    }
+  components: {
+    NavProjects
   }
 }
 </script>
 
 <style lang="scss" scoped>
-h1 {
-  font-size: 7.5vw;
+#scrollContainer {
+  scroll-snap-type: y mandatory;
 }
 
-.minHeight-150 {
-  min-height: 150%;
+#intro {
+  min-height: 100%;
+  scroll-snap-align: start;
 }
 
-.minHeight-50 {
-  min-height: 50%;
+#projects {
+  min-height: 100%;
+  scroll-snap-align: start;
+}
+
+#footer {
+  min-height: 33%;
+  scroll-snap-align: start;
+}
+
+.scrollSnap {
+  // scroll-snap-type: mandatory;
+  // scroll-snap-points-y: repeat(1rem);
+  // scroll-snap-type: y mandatory;
+  // min-height: 200%;
+  //scroll-snap-align: start;
 }
 </style>

@@ -5,3 +5,7 @@ h1 {
   font-size: map-get($units, 4);
   margin-bottom: 1em;
 }
+
+h1.scaled {
+  font-size: 7.5vw;
+}
