@@ -14,13 +14,13 @@
       class="minHeight-50 display-flex flexDirection-col justifyContent-flexEnd scrollSnap"
     >
       <h1 class="marginBottom-0 title">
-        <nuxt-link to="/index">
+        <nuxt-link to="/about">
           About
         </nuxt-link>
-        <nuxt-link to="/index">
+        <nuxt-link to="/contact">
           Contact
         </nuxt-link>
-        <a>
+        <a href="https://www.instagram.com/dereyesdesign/">
           Insta
         </a>
       </h1>

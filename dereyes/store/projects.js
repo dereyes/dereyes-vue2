@@ -1,22 +1,28 @@
 export const state = () => ({
   projects: [
     {
-      name: 'ShadowPlay'
+      name: 'ShadowPlay',
+      link: '/shadowplay'
     },
     {
-      name: 'Gato'
+      name: 'Gato',
+      link: '/gato'
     },
     {
-      name: 'Breathe California Rebranding'
+      name: 'Breathe California Rebranding',
+      link: 'breathe'
     },
     {
-      name: 'Fishy Flop'
+      name: 'Fishy Flop',
+      link: 'fishyflop'
     },
     {
-      name: 'Arirang Visualization'
+      name: 'Arirang Visualization',
+      link: 'arirang'
     },
     {
-      name: 'DisQuiet Prototype'
+      name: 'DisQuiet Prototype',
+      link: 'disquiet'
     }
   ]
 })

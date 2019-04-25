@@ -4,7 +4,7 @@
       <nuxt-link
         v-for="project in projects"
         :key="project.id"
-        to="/index"
+        :to="project.link"
         class="projectName"
       >
         <span

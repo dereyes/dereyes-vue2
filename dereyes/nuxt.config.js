@@ -66,5 +66,12 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  loaders: {
+    vue: {
+      compilerOptions: {
+        preserveWhitespace: false
+      }
+    }
+  },
 }
