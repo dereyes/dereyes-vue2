@@ -1,11 +1,18 @@
 <template>
   <div id="projects" :class="{ hovered: hovering }">
-    <h1 class="position-sticky scaled">
+    <h1 class="title marginBottom-0">
       <span v-for="project in projects" :key="project.id" class="projectName">
-        <span @mouseover="projectHovered" :class="{ hovered: hovering }">
+        <span
+          @mouseenter="projectMouseEnter"
+          @mouseleave="projectMouseLeave"
+          :class="{ hovered: hovering }"
+        >
           {{ project.name }}
         </span>
       </span>
+    </h1>
+    <h1 class="position-sticky marginBottom-0 title">
+      ↓
     </h1>
   </div>
 </template>
@@ -23,8 +30,11 @@ export default {
     }
   },
   methods: {
-    projectHovered: function() {
-      this.hovering = !this.hovering
+    projectMouseEnter: function() {
+      this.hovering = true
+    },
+    projectMouseLeave: function() {
+      this.hovering = false
     }
   }
 }
@@ -40,7 +50,7 @@ export default {
   background: black;
 }
 
-.projectName.hovered {
+.projectName:hover {
   color: white;
 }
 </style>
