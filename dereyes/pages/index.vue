@@ -14,15 +14,15 @@
       class="minHeight-50 display-flex flexDirection-col justifyContent-flexEnd scrollSnap"
     >
       <h1 class="marginBottom-0 title">
-        <span>
+        <nuxt-link to="/index">
           About
-        </span>
-        <span>
+        </nuxt-link>
+        <nuxt-link to="/index">
           Contact
-        </span>
-        <span>
+        </nuxt-link>
+        <a>
           Insta
-        </span>
+        </a>
       </h1>
     </div>
   </div>

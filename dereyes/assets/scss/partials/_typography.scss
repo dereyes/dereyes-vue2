@@ -4,8 +4,15 @@ h1 {
   font-weight: 300;
   font-size: map-get($units, 4);
   margin-bottom: 1em;
+  line-height: 1.2em;
 }
 
 .title {
   font-size: 7.5vmax;
+}
+
+a {
+  color: map-get($colors, black);
+  text-decoration: none;
+  border-bottom: 0.10em solid map-get($colors, pink);
 }
