@@ -21,6 +21,6 @@ export default {
 
 <style lang="scss" scoped>
 main {
-  max-width: 720px;
+  max-width: 540px;
 }
 </style>

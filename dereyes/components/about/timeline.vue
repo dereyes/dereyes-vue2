@@ -24,7 +24,7 @@
 export default {
   computed: {
     timeline() {
-      return this.$store.state.timeline.data
+      return this.$store.state.timeline.
     }
   }
 }
