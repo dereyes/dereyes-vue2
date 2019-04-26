@@ -1,14 +1,18 @@
 <template>
   <div id="timeline" class="col">
-    <div v-for="(year, keyYear) in timeline" :key="keyYear" class="row">
-      <h3>{{ keyYear }}</h3>
+    <div v-for="year in timeline" :key="year.id" class="row">
+      <h3>{{ year.display }}</h3>
       <div class="col">
-        <div v-for="(month, keyMonth) in year" :key="keyMonth" class="row">
+        <div
+          v-for="(month, keyMonth) in year.months"
+          :key="keyMonth"
+          class="row"
+        >
           <div class="col">
             <h3>{{ keyMonth }}</h3>
           </div>
           <div class="col flex-fill">
-            <p v-for="event in month" :key="event.id">{{ event }}</p>
+            <p v-for="event in month" :key="event.id" v-html="event" />
           </div>
         </div>
       </div>
@@ -20,7 +24,7 @@
 export default {
   computed: {
     timeline() {
-      return this.$store.state.timeline
+      return this.$store.state.timeline.data
     }
   }
 }
