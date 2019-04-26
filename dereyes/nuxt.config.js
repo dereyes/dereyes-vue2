@@ -3,6 +3,8 @@ const pkg = require('./package')
 module.exports = {
   mode: 'universal',
 
+  loading: '~/components/loading.vue',
+
   /*
    ** Headers of the page
    */
@@ -65,13 +67,13 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
-  },
-  loaders: {
-    vue: {
-      compilerOptions: {
-        preserveWhitespace: false
+    },
+    loaders: {
+      vue: {
+        compilerOptions: {
+          preserveWhitespace: false
+        }
       }
     }
-  },
+  }
 }

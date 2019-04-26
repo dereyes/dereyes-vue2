@@ -34,7 +34,8 @@ import NavProjects from '~/components/nav/projects.vue'
 export default {
   components: {
     NavProjects
-  }
+  },
+  layout: 'home'
 }
 </script>
 
