@@ -15,6 +15,12 @@ a {
   color: map-get($colors, black);
   text-decoration: none;
   border-bottom: 0.10em solid map-get($colors, pink);
+  &:hover {
+    opacity: 0.5;
+  }
+  &:active {
+    color: map-get($colors, pink);
+  }
 }
 
 p {

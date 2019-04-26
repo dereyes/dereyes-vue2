@@ -15,11 +15,17 @@
     </p>
     <p>
       He has been recognized for his
-      <a>
+      <a
+        href="https://2018.sfdesignweek.org/2016-enrichment-scholarship-winners/"
+      >
         “clean, smart design solutions with well-researched foundations”,
         “ability to transform personal stories into useful tools”,</a
       >
-      and <a>“visual magic”.</a>
+      and
+      <a
+        href="https://www.ladancechronicle.com/joe-kye-ching-ching-wong-launch-their-international-tour-at-navel-la/"
+        >“visual magic”.</a
+      >
     </p>
   </section>
 </template>

@@ -45,17 +45,26 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import '~/assets/scss/modules/_all.scss';
+
 #projects {
   min-height: 100%;
   scroll-snap-align: start;
 }
 
 #projects.hovered {
-  background: black;
+  background: map-get($colors, black);
 }
 
-.projectName:hover {
-  color: white;
+a.projectName {
+  border: none;
+  &:hover {
+    color: white;
+    opacity: 1;
+  }
+  & span {
+    border-bottom: 0.1em solid map-get($colors, pink);
+  }
 }
 </style>
