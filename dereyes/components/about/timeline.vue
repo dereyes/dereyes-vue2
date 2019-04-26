@@ -1,11 +1,11 @@
 <template>
   <div id="timeline" class="col">
     <div v-for="(year, keyYear) in timeline" :key="keyYear" class="row">
-      <p>{{ keyYear }}</p>
+      <h3>{{ keyYear }}</h3>
       <div class="col">
         <div v-for="(month, keyMonth) in year" :key="keyMonth" class="row">
           <div class="col">
-            <p>{{ keyMonth }}</p>
+            <h3>{{ keyMonth }}</h3>
           </div>
           <div class="col flex-fill">
             <p v-for="event in month" :key="event.id">{{ event }}</p>
@@ -29,11 +29,11 @@ export default {
 <style lang="scss" scoped>
 @import '~/assets/scss/modules/_all.scss';
 
-#timeline > div > p {
+#timeline > div > h3 {
   padding-right: map-get($units, 1);
 }
 
-#timeline > div > div > div > div:not(.flex-fill) > p {
+#timeline > div > div > div > div:not(.flex-fill) > h3 {
   padding-right: map-get($units, 1);
 }
 </style>
