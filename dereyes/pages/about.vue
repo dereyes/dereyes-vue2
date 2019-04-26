@@ -27,5 +27,16 @@
         >“visual magic”.</a
       >
     </p>
+    <Timeline />
   </section>
 </template>
+
+<script>
+import Timeline from '~/components/about/timeline.vue'
+
+export default {
+  components: {
+    Timeline
+  }
+}
+</script>

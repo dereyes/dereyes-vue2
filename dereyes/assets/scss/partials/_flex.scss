@@ -75,3 +75,15 @@ $justifyAlign: (
 );
 
 @include classesFromMap($justifyAlign);
+
+.row {
+  display: flex;
+  flex-direction: row;
+  -moz-flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  -moz-flex-direction: column;
+}
