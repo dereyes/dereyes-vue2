@@ -1,9 +1,5 @@
 <template>
-  <div
-    id="drawerButtonContainer"
-    class="position-sticky"
-    :class="{ 'alignSelf-flexEnd': !nav.open }"
-  >
+  <div id="drawerButtonContainer" class="position-sticky alignSelf-flexEnd">
     <button
       id="drawerButton"
       class="marginBottom-0 margin-05"

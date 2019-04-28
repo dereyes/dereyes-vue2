@@ -2,14 +2,14 @@
   <div class="display-flex flex-fill flexDirection-col">
     <div
       id="container"
-      class="display-flex flex-fill overflowY-scroll"
+      class="display-flex flex-fill overflowY-scroll flexDirection-col"
       :class="{ navClosed: !nav.open }"
     >
       <NavButton />
       <main class="display-flex flexDirection-col flex-fill">
-        <NavModal v-show="nav.open" />
         <nuxt v-show="!nav.open" />
       </main>
+      <NavModal v-show="nav.open" />
     </div>
   </div>
 </template>
@@ -38,12 +38,9 @@ main {
 
 #container:not(.navClosed) {
   background: black;
-  flex-direction: row-reverse;
-  justify-content: space-between;
 }
 
 #container.navClosed {
   background: white;
-  flex-direction: column;
 }
 </style>
