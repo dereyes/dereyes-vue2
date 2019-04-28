@@ -34,10 +34,10 @@ export default {
 @import '~/assets/scss/modules/_all.scss';
 
 #timeline > div > h3 {
-  padding-right: map-get($units, 1);
+  padding-right: map-get($units, '1');
 }
 
 #timeline > div > div > div > div:not(.flex-fill) > h3 {
-  padding-right: map-get($units, 1);
+  padding-right: map-get($units, '1');
 }
 </style>

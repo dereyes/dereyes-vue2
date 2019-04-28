@@ -1,6 +1,6 @@
 <template>
   <div id="drawerButtonContainer" class="position-sticky">
-    <button id="drawerButton" class="marginBottom-0">
+    <button id="drawerButton" class="marginBottom-0 margin-05">
       <div>
         Henlo fren
       </div>
@@ -13,6 +13,7 @@
 
 #drawerButtonContainer {
   align-self: flex-end;
+  border-radius: 50%;
 }
 
 #drawerButton {
