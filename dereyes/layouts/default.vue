@@ -1,6 +1,9 @@
 <template>
   <div class="display-flex flex-fill flexDirection-col">
-    <div class="display-flex flex-fill flexDirection-col overflowY-scroll">
+    <div
+      class="display-flex flex-fill flexDirection-col"
+      :class="{ 'overflowY-scroll': nav.open }"
+    >
       <NavButton />
       <NavModal />
       <main class="display-flex flexDirection-col flex-fill">
