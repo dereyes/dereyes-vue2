@@ -31,7 +31,7 @@ export default {
       return this.$store.state.nav
     },
     projects() {
-      return this.$store.state.projects.projects
+      return this.$store.state.projects
     }
   },
   methods: {

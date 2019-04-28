@@ -1,28 +1,32 @@
 export const state = () => ({
-  projects: [
-    {
-      name: 'ShadowPlay',
-      link: '/shadowplay'
-    },
-    {
-      name: 'Gato',
-      link: '/gato'
-    },
-    {
-      name: 'Breathe California Rebranding',
-      link: 'breathe'
-    },
-    {
-      name: 'Fishy Flop',
-      link: 'fishyflop'
-    },
-    {
-      name: 'Arirang Visualization',
-      link: 'arirang'
-    },
-    {
-      name: 'DisQuiet Prototype',
-      link: 'disquiet'
+  shadowplay: {
+    name: 'ShadowPlay',
+    link: '/shadowplay',
+    profile: {
+      Client: 'Crocker Art Museum',
+      Role: 'Coder, visual designer',
+      Tools: 'Adobe Illustrator, Processing, XBox Kinect',
+      Status: 'Presented at Audio Muse at the Crocker Art Museum in April 2018'
     }
-  ]
+  },
+  gato: {
+    name: 'Gato',
+    link: '/gato'
+  },
+  breathe: {
+    name: 'Breathe California Rebranding',
+    link: 'breathe'
+  },
+  fishyflop: {
+    name: 'Fishy Flop',
+    link: 'fishyflop'
+  },
+  arirang: {
+    name: 'Arirang Visualization',
+    link: 'arirang'
+  },
+  disquiet: {
+    name: 'DisQuiet Prototype',
+    link: 'disquiet'
+  }
 })
