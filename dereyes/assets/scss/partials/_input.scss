@@ -9,6 +9,10 @@ button {
   cursor: pointer;
   @extend .border-black;
   @extend p;
+  &:active {
+    background: map-get($colors, white);
+    color: map-get($colors, black);  
+  }
 }
 
 form {

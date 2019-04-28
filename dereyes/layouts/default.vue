@@ -1,7 +1,8 @@
 <template>
   <div class="display-flex flex-fill flexDirection-col">
     <div class="display-flex flex-fill flexDirection-col overflowY-scroll">
-      <DrawerButton />
+      <NavButton />
+      <NavModal />
       <main class="display-flex flexDirection-col flex-fill">
         <nuxt />
       </main>
@@ -10,11 +11,18 @@
 </template>
 
 <script>
-import DrawerButton from '~/components/layout/drawerButton'
+import NavButton from '~/components/nav/navButton'
+import NavModal from '~/components/nav/navModal'
 
 export default {
   components: {
-    DrawerButton
+    NavButton,
+    NavModal
+  },
+  computed: {
+    nav() {
+      return this.$store.state.nav
+    }
   }
 }
 </script>
