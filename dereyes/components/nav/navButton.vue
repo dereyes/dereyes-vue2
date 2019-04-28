@@ -1,5 +1,9 @@
 <template>
-  <div id="drawerButtonContainer" class="position-sticky">
+  <div
+    id="drawerButtonContainer"
+    class="position-sticky"
+    :class="{ 'alignSelf-flexEnd': !nav.open }"
+  >
     <button id="drawerButton" class="marginBottom-0 margin-05" @click="toggle">
       <div>
         Henlo fren
@@ -29,7 +33,6 @@ export default {
 @import '~/assets/scss/modules/_all.scss';
 
 #drawerButtonContainer {
-  align-self: flex-end;
   border-radius: 50%;
 }
 

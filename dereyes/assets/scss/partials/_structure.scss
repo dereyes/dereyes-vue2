@@ -1,3 +1,23 @@
+@import '../modules/all';
+
+$position: (
+  properties: (
+    (
+      propertyAlias: position,
+      property: position,
+      prefixes: ()
+    ),
+  ),
+  values: (
+    (
+      valueAlias: fixed,
+      value: fixed
+    ),
+  ),
+);
+
+@include classesFromMap($position);
+
 .position-sticky {
   position: sticky;
   position: -webkit-sticky;

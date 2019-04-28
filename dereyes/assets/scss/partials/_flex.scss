@@ -65,6 +65,13 @@ $justifyAlign: (
         '-moz-',
       )
     ),
+    (
+      propertyAlias: alignSelf,
+      property: align-self,
+      prefixes: (
+        '-webkit-'
+      )
+    ),
   ),
   values: (
     (

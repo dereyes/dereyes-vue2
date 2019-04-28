@@ -1,13 +1,14 @@
 <template>
   <div class="display-flex flex-fill flexDirection-col">
     <div
-      class="display-flex flex-fill flexDirection-col"
-      :class="{ 'overflowY-scroll': nav.open }"
+      id="container"
+      class="display-flex flex-fill overflowY-scroll"
+      :class="{ navClosed: !nav.open }"
     >
       <NavButton />
-      <NavModal />
       <main class="display-flex flexDirection-col flex-fill">
-        <nuxt />
+        <NavModal v-show="nav.open" />
+        <nuxt v-show="!nav.open" />
       </main>
     </div>
   </div>
@@ -33,5 +34,16 @@ export default {
 <style lang="scss" scoped>
 main {
   max-width: 540px;
+}
+
+#container:not(.navClosed) {
+  background: black;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+#container.navClosed {
+  background: white;
+  flex-direction: column;
 }
 </style>
