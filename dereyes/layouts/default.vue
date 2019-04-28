@@ -1,20 +1,21 @@
 <template>
   <div class="display-flex flex-fill flexDirection-col">
     <div class="display-flex flex-fill flexDirection-col overflowY-scroll">
+      <DrawerButton />
       <main class="display-flex flexDirection-col flex-fill">
         <nuxt />
       </main>
     </div>
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
-import Footer from '~/components/layout/footer'
+import DrawerButton from '~/components/layout/drawerButton'
 
 export default {
   components: {
-    Footer
+    DrawerButton
   }
 }
 </script>

@@ -1,5 +1,7 @@
+@import 'partials/borders';
 @import 'partials/display';
 @import 'partials/flex';
+@import 'partials/input';
 @import 'partials/scroll';
 @import 'partials/sizing';
 @import 'partials/structure';
@@ -14,6 +16,7 @@
 
 html {
   font-size: 24px;
+  color: map-get($colors, black);
 }
 
 html, body {

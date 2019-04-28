@@ -1,0 +1,9 @@
+@import '../modules/all';
+
+.border-black {
+  border: 0.10em solid map-get($colors, black);
+}
+
+.borderBottom-pink {
+  border-bottom: 0.10em solid map-get($colors, pink);
+}
