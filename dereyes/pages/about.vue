@@ -4,8 +4,8 @@
       About
     </h1>
     <p>
-      Darin was born in Los Angeles, California. He graduated from UC Davis in
-      2016 with a BA in Design.
+      Darin E. Reyes was born in Los Angeles, California. He graduated from UC
+      Davis in 2016 with a BA in Design.
     </p>
     <p>
       Darin uses light and code to create immersive interactive experiences. At

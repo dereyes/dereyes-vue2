@@ -39,8 +39,15 @@ module.exports = {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/recaptcha'
   ],
+
+  recaptcha: {
+    siteKey: '6LfKqqAUAAAAAMsWyeTwEds2T7BdCwnRM_t4WTLA',
+    version: 2,    // Version
+  },
+  
   /*
    ** Axios module configuration
    */
