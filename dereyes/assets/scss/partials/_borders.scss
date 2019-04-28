@@ -4,6 +4,10 @@
   border: 0.10em solid map-get($colors, black);
 }
 
+.border-white {
+  border: 0.10em solid map-get($colors, white);
+}
+
 .borderBottom-pink {
   border-bottom: 0.10em solid map-get($colors, pink);
 }

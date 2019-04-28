@@ -1,9 +1,11 @@
 <template>
-  <div @click="toggle">
-    <p>
-      <nuxt-link to="/">Home</nuxt-link>
+  <div>
+    <p @click="toggle">
+      <nuxt-link to="/">
+        Home
+      </nuxt-link>
     </p>
-    <p>
+    <p @click="toggle">
       <nuxt-link
         v-for="project in projects"
         :key="project.id"
@@ -12,7 +14,7 @@
         {{ project.name }}
       </nuxt-link>
     </p>
-    <p>
+    <p @click="toggle">
       <nuxt-link v-for="l in nav.links" :key="l.id" :to="l.link">
         {{ l.name }}
       </nuxt-link>

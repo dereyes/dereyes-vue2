@@ -4,7 +4,12 @@
     class="position-sticky"
     :class="{ 'alignSelf-flexEnd': !nav.open }"
   >
-    <button id="drawerButton" class="marginBottom-0 margin-05" @click="toggle">
+    <button
+      id="drawerButton"
+      class="marginBottom-0 margin-05"
+      :class="{ 'border-white': nav.open }"
+      @click="toggle"
+    >
       <div>
         Henlo fren
       </div>
