@@ -1,3 +1,12 @@
-.td {
+td {
   @extend p;
+  padding-bottom: map-get($rems, '15');
+}
+
+td:not(:last-child) {
+  padding-right: map-get($rems, '1');
+}
+
+table {
+  margin-bottom: map-get($rems, '15');
 }

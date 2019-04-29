@@ -1,5 +1,5 @@
 <template>
-  <div id="drawerButtonContainer" class="position-sticky alignSelf-flexEnd">
+  <div id="drawerButtonContainer" class="position-sticky">
     <button
       id="drawerButton"
       class="marginBottom-0 margin-05"
@@ -38,8 +38,8 @@ export default {
 }
 
 #drawerButton {
-  height: map-get($units, '5');
-  width: map-get($units, '5');
+  height: map-get($rems, '5');
+  width: map-get($rems, '5');
   border-radius: 50%;
 }
 </style>

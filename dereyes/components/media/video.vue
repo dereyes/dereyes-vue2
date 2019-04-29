@@ -1,7 +1,7 @@
 <template>
   <div>
-    <video :src="source" controls loop autoplay />
-    <p>↑ {{ caption }}</p>
+    <video :src="source" controls loop />
+    <p v-if="caption">↑ {{ caption }}</p>
   </div>
 </template>
 
@@ -9,7 +9,8 @@
 export default {
   props: {
     source: String,
-    caption: String
+    caption: String,
+    insta: String
   }
 }
 </script>

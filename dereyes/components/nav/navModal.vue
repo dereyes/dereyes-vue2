@@ -14,7 +14,7 @@
         {{ project.name }}
       </nuxt-link>
     </h1>
-    <h1 class="title" @click="toggle">
+    <h1 class="title marginBottom-0" @click="toggle">
       <nuxt-link v-for="l in nav.links" :key="l.id" :to="l.link">
         {{ l.name }}
       </nuxt-link>

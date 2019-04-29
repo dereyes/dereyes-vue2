@@ -4,8 +4,8 @@ button {
   display: inline-block;
   background: map-get($colors, black);
   color: map-get($colors, white);
-  padding: map-get($units, '05');
-  margin-bottom: map-get($units, '1-2');
+  padding: map-get($rems, '05');
+  margin-bottom: map-get($rems, '15');
   cursor: pointer;
   @extend .border-black;
   @extend p;
@@ -27,17 +27,17 @@ form {
   flex-direction: column;
   flex-direction: -webkit-column;
   flex-direction: -mox-column;
-  margin-bottom: map-get($units, '1-2');
+  margin-bottom: map-get($rems, '15');
 }
 
 label {
-  height: map-get($units, 1);
-  margin-bottom: map-get($units, '05');
+  height: map-get($rems, '1');
+  margin-bottom: map-get($rems, '05');
 }
 
 input, textarea {
   @extend .border-black;
   @extend p;
-  min-height: map-get($units, '1-2');
+  min-height: map-get($rems, '15');
   font-family: nimbus-roman, serif;
 }

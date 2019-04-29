@@ -4,7 +4,7 @@
     <table>
       <tbody>
         <tr v-for="(rowValue, rowKey) in project.profile" :key="rowValue.id">
-          <td>{{ rowKey }}</td>
+          <td class="fontWeight-bold">{{ rowKey }}</td>
           <td>{{ rowValue }}</td>
         </tr>
       </tbody>

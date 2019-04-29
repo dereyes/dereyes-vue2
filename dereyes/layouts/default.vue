@@ -1,15 +1,15 @@
 <template>
-  <div class="display-flex flex-fill flexDirection-col">
+  <div class="flex-fill col">
     <div
       id="container"
-      class="display-flex flex-fill overflowY-scroll flexDirection-col"
+      class="flex-fill overflowY-scroll row"
       :class="{ navClosed: !nav.open }"
     >
-      <NavButton />
       <main class="display-flex flexDirection-col flex-fill">
         <nuxt v-show="!nav.open" />
       </main>
       <NavModal v-show="nav.open" />
+      <NavButton />
     </div>
   </div>
 </template>
@@ -34,6 +34,10 @@ export default {
 <style lang="scss" scoped>
 main {
   max-width: 540px;
+}
+
+#container {
+  justify-content: space-between;
 }
 
 #container:not(.navClosed) {
