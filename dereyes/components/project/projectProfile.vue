@@ -4,7 +4,7 @@
       <tbody>
         <tr v-for="(rowValue, rowKey) in project.profile" :key="rowValue.id">
           <td class="fontWeight-bold">{{ rowKey }}</td>
-          <td>{{ rowValue }}</td>
+          <td v-html="rowValue" />
         </tr>
       </tbody>
     </table>
@@ -14,6 +14,7 @@
 <script>
 export default {
   props: {
+    // eslint-disable-next-line
     project: Object
   }
 }

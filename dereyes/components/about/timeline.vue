@@ -12,6 +12,7 @@
             <h3>{{ keyMonth }}</h3>
           </div>
           <div class="col flex-fill">
+            <!-- prettier-ignore -->
             <p v-for="event in month" :key="event.id" v-html="event" />
           </div>
         </div>
