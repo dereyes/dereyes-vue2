@@ -1,6 +1,7 @@
 td {
   @extend p;
   padding-bottom: map-get($rems, '15');
+  vertical-align: top;
 }
 
 td:not(:last-child) {

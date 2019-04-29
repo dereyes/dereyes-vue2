@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>{{ project.name }}</h1>
     <table>
       <tbody>
         <tr v-for="(rowValue, rowKey) in project.profile" :key="rowValue.id">

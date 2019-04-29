@@ -1,6 +1,7 @@
 export const state = () => ({
   shadowplay: {
     name: 'ShadowPlay',
+    subtitle: 'Interactive dance floor',
     link: '/shadowplay',
     profile: {
       Client: 'Crocker Art Museum',

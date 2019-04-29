@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <video :src="source" controls loop />
-    <p v-if="caption">↑ {{ caption }}</p>
+  <div class="marginBottom-15">
+    <slot />
+    <p class="marginBottom-0" v-if="caption">↑ {{ caption }}</p>
   </div>
 </template>
 
@@ -10,7 +10,8 @@ export default {
   props: {
     source: String,
     caption: String,
-    insta: String
+    insta: String,
+    vimeo: String
   }
 }
 </script>
