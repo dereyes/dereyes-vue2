@@ -9,7 +9,9 @@
         <nuxt v-show="!nav.open" />
       </main>
       <NavModal v-show="nav.open" />
-      <NavButton />
+      <no-ssr>
+        <NavButton />
+      </no-ssr>
     </div>
   </div>
 </template>
