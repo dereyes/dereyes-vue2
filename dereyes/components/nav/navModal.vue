@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="title" @click="toggle">
-      <nuxt-link to="/">
+      <nuxt-link to="/#projects">
         Home
       </nuxt-link>
     </h1>

@@ -3,7 +3,7 @@
   <div>
     <ProjectTitle :project="project" />
     <Video>
-      <video preload muted autoplay loop src="~/assets/shadowplay/hero.mp4" />
+      <video preload muted autoplay loop src="projects/shadowplay/hero.mp4" />
     </Video>
     <ProjectProfile :project="project" />
     <h2>Process</h2>
@@ -13,7 +13,7 @@
       caption="A promo video for a user testing session"
       insta="https://www.instagram.com/p/BhN3twSHpSM"
     >
-      <video controls muted src="~/assets/shadowplay/promo.mp4" />
+      <video controls muted src="projects/shadowplay/promo.mp4" />
     </Video>
     <p>The visualization combined pre-rendered sprites created in Adobe Illustrator with elements generated live within Processing. Each element was created or modified using audio input from Joe's performance.</p>
     <p>Joe had heard the folk song as a child, when his mother would hum it as she carried him on her back. The project gave us an opportunity to learn more about the song's history and significance, which helped us add meaning to the performance and visualization.</p>
@@ -23,7 +23,7 @@
 <script>
 import ProjectTitle from '~/components/project/projectTitle'
 import ProjectProfile from '~/components/project/projectProfile'
-import Video from '~/components/media/video'
+import Video from '~/components/media/vid'
 
 export default {
   components: {

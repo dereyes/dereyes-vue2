@@ -7,14 +7,14 @@
       :class="{ 'border-white': nav.open }"
       @click="toggle"
     >
-      <svg viewBox="-50 -50 600 600">
-    <path id="curve" d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250"  />
-    <text width="500">
-      <textPath xlink:href="#curve">
-        {{ buttonText }}
-      </textPath>
-    </text>
-  </svg>
+      <svg id="svg" viewBox="-50 -50 600 600">
+        <path id="curve" d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250"  />
+          <text width="500">
+            <textPath xlink:href="#curve">
+              {{ buttonText }}
+            </textPath>
+          </text>
+      </svg>
     </button>
   </div>
 </template>
@@ -25,7 +25,7 @@ import { mapMutations } from 'vuex'
 export default {
   data() {
     return {
-      buttonText: 'henlo pals friendos'
+      buttonText: 'Hello friends'
     }
   },
   computed: {
@@ -61,9 +61,32 @@ export default {
   border-radius: 50%;
 }
 
-text {
+#drawerButton svg {
+  transform-origin: 50% 50%;
+  animation: rotation 120s infinite linear;
+  -webkit-animation: rotation 120s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+#drawerButton svg path {
+  fill: transparent;
+}
+
+#drawerButton svg text {
   font-family: nimbus-sans, sans-serif;
   fill: white;
   font-size: 100px;
+}
+
+#drawerButton:active svg text {
+  fill: black;
 }
 </style>

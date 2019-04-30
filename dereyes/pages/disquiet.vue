@@ -3,7 +3,7 @@
   <div>
     <ProjectTitle :project="project" />
     <Video>
-      <video preload muted autoplay loop src="~/assets/shadowplay/hero.mp4" />
+      <video preload muted autoplay loop src="projects/shadowplay/hero.mp4" />
     </Video>
     <ProjectProfile :project="project" />
     <h2>Concept</h2>
@@ -27,7 +27,7 @@
 <script>
 import ProjectTitle from '~/components/project/projectTitle'
 import ProjectProfile from '~/components/project/projectProfile'
-import Video from '~/components/media/video'
+import Video from '~/components/media/vid'
 
 export default {
   components: {
