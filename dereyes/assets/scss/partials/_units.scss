@@ -12,6 +12,11 @@ $padding: (
       property: padding-right,
       prefixes: (),
     ),
+    (
+      propertyAlias: paddingLeft,
+      property: padding-left,
+      prefixes: (),
+    ),
   ),
   maps: (
     $rems,

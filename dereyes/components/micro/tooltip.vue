@@ -25,7 +25,8 @@ export default {
   background: black;
   color: white;
   position: absolute;
-  left: -50%;
+  left: -150%;
+  right: -150%;
   top: 150%;
   padding: 0.25em;
   text-align: center;
@@ -34,8 +35,9 @@ export default {
 
 .tooltipTail {
   position: absolute;
-  top: 130%;
+  top: 150%;
   left: 50%;
+  margin-top: -5px;
   margin-left: -5px;
   width: 0;
   border-bottom: 5px solid black;
