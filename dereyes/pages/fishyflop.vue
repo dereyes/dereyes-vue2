@@ -2,9 +2,7 @@
   <!-- prettier-ignore -->
   <div>
     <ProjectTitle :project="project" />
-    <Video>
-      <video preload muted autoplay loop src="projects/shadowplay/hero.mp4" />
-    </Video>
+    <Pic source="projects/fishyflop/1.gif" />
     <ProjectProfile :project="project" />
     <h2>Concept</h2>
     <p>Fishy Flop is a fin-tastic mobile game by The Fishy Flop Team. The game combines the physics of games like Angry Birds with the quirky controls of games like QWOP.</p>
@@ -18,19 +16,23 @@
       <li>Me, Visuals and Interfaces</li>
     </ul>
     <h2>Samples</h2>
+    <Pic source="projects/fishyflop/7.jpg" />
+    <Pic source="projects/fishyflop/1.jpg" />
+    <Pic source="projects/fishyflop/2.jpg" />
+    <Pic source="projects/fishyflop/6.jpg" />
   </div>
 </template>
 
 <script>
 import ProjectTitle from '~/components/project/projectTitle'
 import ProjectProfile from '~/components/project/projectProfile'
-import Video from '~/components/media/vid'
+import Pic from '~/components/media/pic'
 
 export default {
   components: {
     ProjectTitle,
     ProjectProfile,
-    Video
+    Pic
   },
   computed: {
     project() {

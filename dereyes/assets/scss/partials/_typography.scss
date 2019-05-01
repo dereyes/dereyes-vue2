@@ -59,3 +59,7 @@ small {
 .caption {
   font-style: italic;
 }
+
+ul {
+  margin-bottom: map-get($ems, '15');
+}
