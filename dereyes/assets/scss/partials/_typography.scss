@@ -44,10 +44,18 @@ p {
   line-height: map-get($ems, '15');
 }
 
+small {
+  font-size: .5rem;
+}
+
 .fontFamily-serif {
   font-family: nimbus-roman, serif !important;
 }
 
 .fontWeight-bold {
   font-weight: 700;
+}
+
+.caption {
+  font-style: italic;
 }

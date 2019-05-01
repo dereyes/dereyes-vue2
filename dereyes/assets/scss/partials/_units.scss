@@ -7,6 +7,11 @@ $padding: (
       property: padding,
       prefixes: (),
     ),
+    (
+      propertyAlias: paddingRight,
+      property: padding-right,
+      prefixes: (),
+    ),
   ),
   maps: (
     $rems,
