@@ -2,10 +2,10 @@
   <div class="marginBottom-15">
     <slot />
     <div class="row">
-      <div class="col paddingRight-1 flex-fill">
+      <div class="col flex-fill">
         <p v-if="caption" class="caption marginBottom-0">↑ {{ caption }}</p>
       </div>
-      <div class="col">
+      <div class="col paddingLeft-1">
         <Tooltip v-if="insta" text="Watch on Instagram">
           <a :href="insta">
             <i class="fab fa-instagram"></i>
