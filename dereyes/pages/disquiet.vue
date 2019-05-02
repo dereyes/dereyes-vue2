@@ -26,6 +26,7 @@
     <p>This was the first project where I explored the intersections of music, design, code, and mental health. I continued this exploration in projects such as Gato.</p>
     <p><sup>1</sup>According to the Higher Education Research Institute at UCLA</p>
     <p><sup>2</sup>According to the American College Health Association</p>
+    <ProjectNav :nextProject="nextProject"/>
   </div>
 </template>
 
@@ -34,17 +35,22 @@ import ProjectTitle from '~/components/project/projectTitle'
 import ProjectProfile from '~/components/project/projectProfile'
 import Vid from '~/components/media/vid'
 import Pic from '~/components/media/pic'
+import ProjectNav from '~/components/project/projectNav'
 
 export default {
   components: {
     ProjectTitle,
     ProjectProfile,
     Vid,
-    Pic
+    Pic,
+    ProjectNav
   },
   computed: {
     project() {
       return this.$store.state.projects.disquiet
+    },
+    nextProject() {
+      return this.$store.state.projects.arirang
     }
   }
 }

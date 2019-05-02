@@ -22,6 +22,7 @@
       <video controls muted src="projects/arirang/performance.mp4" />
     </Vid>
     <p>Joe had heard the folk song as a child, when his mother would hum it as she carried him on her back. The project gave us an opportunity to learn more about the song's history and significance, which helped us add meaning to the performance and visualization.</p>
+    <ProjectNav :prevProject="prevProject" :nextProject="nextProject"/>
   </div>
 </template>
 
@@ -30,17 +31,25 @@ import ProjectTitle from '~/components/project/projectTitle'
 import ProjectProfile from '~/components/project/projectProfile'
 import Vid from '~/components/media/vid'
 import Pic from '~/components/media/pic'
+import ProjectNav from '~/components/project/projectNav'
 
 export default {
   components: {
     ProjectTitle,
     ProjectProfile,
     Vid,
-    Pic
+    Pic,
+    ProjectNav
   },
   computed: {
     project() {
       return this.$store.state.projects.arirang
+    },
+    prevProject() {
+      return this.$store.state.projects.disquiet
+    },
+    nextProject() {
+      return this.$store.state.projects.fishyflop
     }
   }
 }

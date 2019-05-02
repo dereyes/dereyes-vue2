@@ -17,6 +17,7 @@
     <p>The giant cat was inspired by the work of childhood psychologist DW Winnicott. He theorised that our childhood relationships to soft toys deepen our relationships to reality and ourselves, and prepare us to be emotionally mature adults.</p>
     <p>The experience was designed to remind adults of what it was like to be small, and to have a stuffed companion. Young visitors enjoyed climbing over the cat and cuddling with it while watching the projection for hours at a time.</p>
     <Pic source="projects/gato/2.gif" caption="Imagery in the projection told the story of a twenty-something reconnecting with their childhood self." />
+    <ProjectNav :prevProject="prevProject" :nextProject="nextProject"/>
   </div>
 </template>
 
@@ -25,17 +26,25 @@ import ProjectTitle from '~/components/project/projectTitle'
 import ProjectProfile from '~/components/project/projectProfile'
 import Vid from '~/components/media/vid'
 import Pic from '~/components/media/pic'
+import ProjectNav from '~/components/project/projectNav'
 
 export default {
   components: {
     ProjectTitle,
     ProjectProfile,
     Vid,
-    Pic
+    Pic,
+    ProjectNav
   },
   computed: {
     project() {
       return this.$store.state.projects.gato
+    },
+    prevProject() {
+      return this.$store.state.projects.breathe
+    },
+    nextProject() {
+      return this.$store.state.projects.shadowplay
     }
   }
 }

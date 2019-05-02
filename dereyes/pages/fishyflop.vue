@@ -20,6 +20,7 @@
     <Pic source="projects/fishyflop/1.jpg" />
     <Pic source="projects/fishyflop/2.jpg" />
     <Pic source="projects/fishyflop/6.jpg" />
+    <ProjectNav :prevProject="prevProject" :nextProject="nextProject"/>
   </div>
 </template>
 
@@ -27,16 +28,24 @@
 import ProjectTitle from '~/components/project/projectTitle'
 import ProjectProfile from '~/components/project/projectProfile'
 import Pic from '~/components/media/pic'
+import ProjectNav from '~/components/project/projectNav'
 
 export default {
   components: {
     ProjectTitle,
     ProjectProfile,
-    Pic
+    Pic,
+    ProjectNav
   },
   computed: {
     project() {
       return this.$store.state.projects.fishyflop
+    },
+    prevProject() {
+      return this.$store.state.projects.arirang
+    },
+    nextProject() {
+      return this.$store.state.projects.breathe
     }
   }
 }

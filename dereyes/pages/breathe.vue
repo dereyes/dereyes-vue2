@@ -15,6 +15,7 @@
     <Vid insta="https://www.instagram.com/p/BV8SmWih-sT/">
       <video controls muted src="projects/breathe/trek.mp4" />
     </Vid>
+    <ProjectNav :prevProject="prevProject" :nextProject="nextProject"/>
   </div>
 </template>
 
@@ -23,17 +24,25 @@ import ProjectTitle from '~/components/project/projectTitle'
 import ProjectProfile from '~/components/project/projectProfile'
 import Vid from '~/components/media/vid'
 import Pic from '~/components/media/pic'
+import ProjectNav from '~/components/project/projectNav'
 
 export default {
   components: {
     ProjectTitle,
     ProjectProfile,
     Vid,
-    Pic
+    Pic,
+    ProjectNav
   },
   computed: {
     project() {
       return this.$store.state.projects.breathe
+    },
+    prevProject() {
+      return this.$store.state.projects.fishyflop
+    },
+    nextProject() {
+      return this.$store.state.projects.gato
     }
   }
 }

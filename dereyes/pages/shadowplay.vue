@@ -27,6 +27,7 @@
     >
       <video preload controls muted src="projects/shadowplay/doc720.mp4" />
     </Vid>
+    <ProjectNav :prevProject="prevProject" />
   </div>
 </template>
 
@@ -34,16 +35,21 @@
 import ProjectTitle from '~/components/project/projectTitle'
 import ProjectProfile from '~/components/project/projectProfile'
 import Vid from '~/components/media/vid'
+import ProjectNav from '~/components/project/projectNav'
 
 export default {
   components: {
     ProjectTitle,
     ProjectProfile,
-    Vid
+    Vid,
+    ProjectNav
   },
   computed: {
     project() {
       return this.$store.state.projects.shadowplay
+    },
+    prevProject() {
+      return this.$store.state.projects.gato
     }
   }
 }
