@@ -16,7 +16,7 @@
             <i class="fab fa-vimeo-v"></i>
           </a>
         </Tooltip>
-        <Tooltip v-if="youtube" text="Watch on Vimeo">
+        <Tooltip v-if="youtube" text="Watch on Youtube">
           <a :href="youtube">
             <i class="fab fa-youtube"></i>
           </a>
