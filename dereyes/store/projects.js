@@ -4,6 +4,7 @@ export const state = () => ({
     name: 'ShadowPlay',
     subtitle: 'Interactive dance floor',
     link: '/shadowplay',
+    hero: 'projects/shadowplay/hero.mp4',
     profile: {
       Client: 'Crocker Art Museum',
       Role: 'Coder, visual designer',
@@ -15,6 +16,7 @@ export const state = () => ({
     name: 'Gato',
     subtitle: 'Interactive installation for babies, children, and their caretakers',
     link: '/gato',
+    hero: 'projects/gato/doc.mp4',
     profile: {
       Client: 'Crocker Art Museum',
       Role: 'Audio designer, coder, visual designer',
@@ -26,6 +28,7 @@ export const state = () => ({
     name: 'Breathe California Rebranding',
     subtitle: 'Marketing materals for a 100-year-old non-profit',
     link: 'breathe',
+    hero: 'projects/breathe/byma.mp4',
     profile: {
       Client: 'Breathe California Sacramento Region',
       Role: 'Coder, visual designer',
@@ -36,6 +39,7 @@ export const state = () => ({
     name: 'Fishy Flop',
     subtitle: 'UI and gameplay assets for a mobile game',
     link: 'fishyflop',
+    hero: 'projects/shadowplay/byma.mp4',
     profile: {
       Client: 'The Fishy Flop Team',
       Role: 'UI designer, visual designer',
@@ -47,6 +51,7 @@ export const state = () => ({
     name: 'Arirang Visualization',
     subtitle: 'Live interactive concert visuals',
     link: 'arirang',
+    hero: 'projects/arirang/sprite.mp4',
     profile: {
       Client: 'Joe Kye',
       Role: 'Coder, visual Designer, video jockey',
@@ -58,6 +63,7 @@ export const state = () => ({
     name: 'DisQuiet Prototype',
     subtitle: 'Musical relaxation app for depression and anxiety',
     link: 'disquiet',
+    hero: 'projects/disquiet/demo.mp4',
     profile: {
       Role: 'Audio designer, coder, researcher, visual Designer',
       Tools: 'Processing',
