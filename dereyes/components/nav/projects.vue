@@ -1,24 +1,29 @@
 <template>
   <div id="projects" :class="{ hovered: hovering }">
-    <h1 class="title marginBottom-0">
-      <nuxt-link
-        v-for="project in projects"
-        :key="project.id"
-        :to="project.link"
-        class="projectName"
-      >
-        <span
-          :class="{ hovered: hovering }"
-          @mouseenter="projectMouseEnter"
-          @mouseleave="projectMouseLeave"
+    <div id="videoContainer">
+      <video id="videoBackground" :src="source" preload autoplay loop muted />
+    </div>
+    <div id="foreground">
+      <h1 class="title marginBottom-0">
+        <nuxt-link
+          v-for="project in projects"
+          :key="project.id"
+          :to="project.link"
+          class="projectName"
         >
-          {{ project.name }}
-        </span>
-      </nuxt-link>
-    </h1>
-    <h1 class="position-sticky marginBottom-0 title">
-      ↓
-    </h1>
+          <span
+            :class="{ hovered: hovering }"
+            @mouseenter="projectMouseEnter(project)"
+            @mouseleave="projectMouseLeave(project)"
+          >
+            {{ project.name }}
+          </span>
+        </nuxt-link>
+      </h1>
+      <h1 class="position-sticky marginBottom-0 title">
+        ↓
+      </h1>
+    </div>
   </div>
 </template>
 
@@ -26,7 +31,8 @@
 export default {
   data() {
     return {
-      hovering: false
+      hovering: false,
+      source: ''
     }
   },
   computed: {
@@ -35,11 +41,13 @@ export default {
     }
   },
   methods: {
-    projectMouseEnter: function() {
+    projectMouseEnter: function(project) {
       this.hovering = true
+      this.source = project.hero
     },
-    projectMouseLeave: function() {
+    projectMouseLeave: function(project) {
       this.hovering = false
+      this.source = ''
     }
   }
 }
@@ -49,8 +57,31 @@ export default {
 @import '~/assets/scss/modules/_all.scss';
 
 #projects {
-  min-height: 100%;
+  height: 100%;
   scroll-snap-align: start;
+  position: relative;
+  display: flex;
+}
+
+#videoContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  flex: 1 1 0;
+}
+
+#foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#videoBackground {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.5;
 }
 
 #projects.hovered {
