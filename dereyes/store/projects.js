@@ -16,7 +16,7 @@ export const state = () => ({
     name: 'Gato',
     subtitle: 'Interactive installation for babies, children, and their caretakers',
     link: '/gato',
-    hero: 'projects/gato/doc.mp4',
+    hero: 'projects/gato/hero.mp4',
     profile: {
       Client: 'Crocker Art Museum',
       Role: 'Audio designer, coder, visual designer',
@@ -28,7 +28,7 @@ export const state = () => ({
     name: 'Breathe California Rebranding',
     subtitle: 'Marketing materals for a 100-year-old non-profit',
     link: 'breathe',
-    hero: 'projects/breathe/byma.mp4',
+    hero: 'projects/breathe/hero.mp4',
     profile: {
       Client: 'Breathe California Sacramento Region',
       Role: 'Coder, visual designer',
@@ -39,7 +39,7 @@ export const state = () => ({
     name: 'Fishy Flop',
     subtitle: 'UI and gameplay assets for a mobile game',
     link: 'fishyflop',
-    hero: 'projects/shadowplay/byma.mp4',
+    hero: 'projects/fishyflop/hero.mp4',
     profile: {
       Client: 'The Fishy Flop Team',
       Role: 'UI designer, visual designer',
