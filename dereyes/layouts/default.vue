@@ -1,14 +1,10 @@
 <template>
   <div class="flex-fill col">
-    <div
-      id="container"
-      class="flex-fill overflowY-scroll row"
-      :class="{ navClosed: !nav.open }"
-    >
+    <div id="container" class="flex-fill row" :class="{ navOpen: nav.open }">
       <main class="display-flex flexDirection-col flex-fill">
-        <nuxt v-show="!nav.open" />
+        <nuxt id="content" />
       </main>
-      <NavModal v-show="nav.open" />
+      <NavModal id="navModal" />
       <NavButton />
     </div>
   </div>
@@ -37,14 +33,23 @@ main {
 }
 
 #container {
-  justify-content: space-between;
+  overflow-y: scroll;
 }
 
-#container:not(.navClosed) {
+#container:not(.navOpen) {
+  justify-content: space-between;
+  background: white;
+}
+
+#container.navOpen {
   background: black;
 }
 
-#container.navClosed {
-  background: white;
+#container.navOpen #content {
+  display: none;
+}
+
+#container:not(.navOpen) #navModal {
+  display: none;
 }
 </style>
