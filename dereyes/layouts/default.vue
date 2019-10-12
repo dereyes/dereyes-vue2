@@ -1,23 +1,21 @@
 <template>
   <div class="flex-fill col">
-    <div id="container" class="flex-fill row" :class="{ navOpen: nav.open }">
-      <main class="display-flex flexDirection-col flex-fill">
-        <nuxt id="content" />
-      </main>
-      <NavModal id="navModal" />
-      <NavButton />
-    </div>
+    <main id="pages">
+      <nuxt id="content" />
+    </main>
+    <!-- <NavModal id="navModal" /> -->
+    <NavButton />
   </div>
 </template>
 
 <script>
 import NavButton from '~/components/nav/navButton'
-import NavModal from '~/components/nav/navModal'
+// import NavModal from '~/components/nav/navModal'
 
 export default {
   components: {
-    NavButton,
-    NavModal
+    // NavModal,
+    NavButton
   },
   computed: {
     nav() {
@@ -28,9 +26,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-main {
-  max-width: 540px;
-}
+// main {
+//   max-width: 540px;
+// }
 
 #container {
   overflow-y: scroll;
@@ -51,5 +49,12 @@ main {
 
 #container:not(.navOpen) #navModal {
   display: none;
+}
+
+#pages {
+  scroll-snap-type: y mandatory;
+  min-height: 100%;
+  width: 100%;
+  overflow-y: scroll;
 }
 </style>

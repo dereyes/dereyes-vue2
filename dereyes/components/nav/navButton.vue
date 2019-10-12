@@ -1,6 +1,6 @@
 <template>
   <!-- prettier-ignore -->
-  <div id="drawerButtonContainer" class="position-sticky">
+  <div id="drawerButtonContainer">
     <button
       id="drawerButton"
       class="marginBottom-0 margin-05 padding-0"
@@ -53,6 +53,9 @@ export default {
 
 #drawerButtonContainer {
   border-radius: 50%;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 #drawerButton {
